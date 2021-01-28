@@ -13,3 +13,6 @@ console.log(window.location.href); // esta todo lo que esta n la web href la url
 }
  redirect();*/
 
+function abrirVentana (url){
+    window.open(url,"","width=400, height=300"); //para abri una nueva ventana desde consola
+}
