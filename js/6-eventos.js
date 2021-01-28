@@ -11,26 +11,36 @@ function cambiarColor(){
         boton3.style.background = "red";
        
     }else{
-        boton.style.background = "green";
+        boton3.style.background = "green";
     }
 
     boton3.style.padding ="10ox";
-    bonton3.style.border = "1px solid #ccc";
+    boton3.style.border = "1px solid #ccc";
 
-    return (true);
+    return true;
 
 }
+
+//TERCER BOTON CLICK
+
  var click = document.querySelector("#botonClick");
  
- click.addEventListener('click', function(){
+ click.addEventListener('click1', function(){
      cambiarColor();
  
 });
 
+
 //mouse over cuando se pasa por encima de un boton lo combia de color 
 
-boton3.addEventListener('mouseover', function(){
+click.addEventListener('mouseover', function(){
 
-    boton3.style.background = "#ccc";
+    click.style.background = "#ccc";
+}
+);
+
+click.addEventListener('mouseout', function(){
+
+    click.style.background = "black";
 }
 );
