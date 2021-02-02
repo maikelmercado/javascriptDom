@@ -20,5 +20,12 @@ input.addEventListener('keydown',function(event){
 //keypress tecla precionada
 input.addEventListener('keypress', function(event){
 
-    console.log(["keypress]estas pulsando esta tecla", String.fromCharCode(event.keycode));
+    console.log(["keypress] tecla presionada", String.fromCharCode(event.keycode));
+
+});
+
+input.addEventListener('keyup', function(event){
+
+    console.log(["keyup] cuando se suenta la tecla", String.fromCharCode(event.keycode));
+
 });
